@@ -1,0 +1,20 @@
+<%= render "shared/jumbotron", header: "Coconut Airways", tag_line: "Masaya dito.. ", alignment:"text-center"%>
+
+<div class="row text-center"> 
+        <div class="col-lg-4">
+              <%= render "shared/card", image: "available_flight.jpg", card_title: "Book a flight?", card_text: "Click the button below to reserve a flight", button_text: "Reserve Flight", link: "/flights/new" %>
+        </div>
+        <div class="col-lg-4">
+              <%= render "shared/card", image: "register.png", card_title: "Not Registered?", card_text: "Register now to reserve a flight", button_text: "Register",link: "/users/new" %>
+        </div>
+         <div class="col-lg-4">
+              <%= render "shared/card", image: "about_us.jpg", card_title: "About Us", card_text: "Learn more about us", button_text: "About Us",link: "#"  %>
+        </div>
+</div>
+
+
+
+
+
+
+

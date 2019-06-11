@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+
+<h1> Here is the list of all Seat Classes: </h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Class name</th>
+      <th>Price</th>
+      <th>Food service</th>
+      <th>Seat type</th>
+      <th>Leg room</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% seat_classes.each do |seat_class| %>
+      <tr>
+        <td><%= seat_class.class_name %></td>
+        <td>$<%= seat_class.price %></td>
+        <td><%= seat_class.food_service %></td>
+        <td><%= seat_class.seat_type %></td>
+        <td><%= seat_class.leg_room %> inches</td>
+        
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
